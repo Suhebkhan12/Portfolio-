@@ -39,6 +39,6 @@ app.post('/submit',async (req, res)=>{
 })
 
 
-app.listen(3000,(function(){
+app.listen(3000,()=>{
     console.log("server is listen on port 3000.");
-}));
+});
