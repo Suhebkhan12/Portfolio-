@@ -1,0 +1,478 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+body
+{
+    font-family: sans-serif;
+    background-color: rgb(9, 25, 39)
+   
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+
+}
+nav
+{  
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    
+}
+
+.logo h2
+{
+   font-size: 32px;
+   margin-left: 30px;
+}
+span
+{
+    color:#e74c3c;
+}
+.icons a
+{
+   text-decoration: none;
+   padding: 10px 18px;
+   font-size: 23px;
+   color: white;
+   cursor: pointer;
+
+}
+.icons
+{
+    margin-right: 100px;
+}
+.icons a:hover
+{
+     color:#e74c3c;
+}
+.icons a.active
+{
+     color:#e74c3c;
+}
+
+
+/* ----- Main css  ---*/
+
+.main
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+    
+}
+.intro
+{
+    margin-top: 100px;
+}
+.intro h3
+{
+    color: white;
+}
+.intro h2
+{
+    color: white;
+    font-size: 40px;
+}
+.intro h1
+{
+    color: white;
+}
+
+.intro a img
+{
+    width: 60px;
+    height: 60px;
+}
+
+#mainImg
+{   
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 80px;
+    overflow: hidden;
+    border-left:  3px solid red;
+    border-right:  3px solid blue;
+    border-top:  3px solid green;
+    border-bottom:  3px solid yellowgreen;
+    cursor: pointer;
+   
+     
+}
+#mainImg:hover 
+{
+    transform: scale(1.2);
+ 
+}
+
+
+
+/* ----- about me css  ---*/
+
+
+.about
+{ 
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 520px;
+    
+    
+}
+
+.about img
+{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.aboutme
+{
+    color: white;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+.aboutme h2
+{
+    font-size: 35px;
+}
+
+.aboutIcon
+{
+    display: flex;
+  
+}
+
+.aboutIcon p
+{
+    margin: 20px 40px 0 0px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.link:hover
+{
+    color: #e74c3c;
+}
+.link.active-link
+{
+    color: #e74c3c;
+}
+
+.aboutContent
+{
+    list-style: none;
+    margin: 20px  0px 30px 0px;
+    
+}
+
+.aboutContent li
+{
+   
+    margin: 20px  0px 20px 0px;
+    font-size: 18px;
+}
+#aboutContent2
+{
+  display: none;
+}
+
+/*  project css  */
+.project-section
+{
+    padding: 10px 20px;
+    width: 100%;
+    height: 600px;
+   
+}
+.heading h1
+{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 60px;
+}
+
+.projectList
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+}
+.project
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img
+{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    display: block;
+    transition:transform(0.5);
+}
+.text
+{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    color: white;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
+    transition: height 0.5s;
+}
+.text h2
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.text a
+{  
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;    cursor: pointer;
+ 
+
+}
+.project:hover img
+{
+    transform: scale(1.1);
+}
+.project:hover .text
+{
+    height: 100%;
+}
+
+
+
+/*  ---contact css -----*/
+.contactme
+{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left
+{   
+    width: 100%;
+    height: 200px;
+    margin: 100px 0 0 100px; 
+    
+}
+.left h1
+{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 20px 50px 0;
+}
+.left p
+{
+    color: white;
+    font-size: 17px;
+}
+
+.resume a
+{
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 600;
+   background-color: #e74c3c;
+   color: white;
+   padding: 8px 16px;
+   margin-top: 20px;
+   cursor: pointer;
+   
+}
+.resume a:hover
+{
+    background: none;
+    border: 2px solid #e74c3c;
+}
+#btn
+{
+    margin-top: 20px;
+}
+
+.socialicons a img
+{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    margin-inline: 10px ;
+   
+}
+
+
+.right
+{  
+    width: 100%;
+    height: 200px;
+    margin: 100px 100px 0 0; 
+ 
+}
+
+form
+{
+    margin-top: 50px;
+}
+form input
+{
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin: 20px;
+    background-color:black;
+    color: white;
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+}
+form button
+{
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    margin:  20px auto;
+    display: block;
+    text-align: center;
+    background-color:#e74c3c;
+    color: white;
+    border: none;
+    cursor:pointer;
+    font-weight:600;
+}
+form button:hover
+{
+    background: none;
+    border: 2px solid #e74c3c
+}
+
+.footer h2
+{
+    width: 100%;
+    height: 60px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding:15px;
+
+    
+}
+
+nav .fa-solid 
+{
+    display: none
+}
+
+
+
+@media only screen and (max-width:567px){
+
+    nav .fa-solid 
+    {
+        display: block;
+        font-size: 25px;
+        position: absolute;
+    
+    }
+    
+    nav .icons 
+    {
+        position: fixed;
+        width: 130px;
+        height: 500px;
+        background-color:rgb(18, 52, 83);
+        top: 0%;
+        padding-top: 40px;
+        right: -100px; 
+        padding-top: 40px;
+        transition: right 0.3s ease;
+        display: none;
+        
+        
+
+    }
+    .icons a
+    {
+        display: block;
+        margin: 20px;
+    }
+     nav .fa-solid 
+     {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+     }
+     nav #menu
+     { 
+
+        top: 3px;
+        margin: 100px;
+        text-align: center;
+        position: relative;
+        display: block;
+    
+     }
+   
+    .intro h3
+    {
+        margin-left: 10px;
+    }
+    .intro h2
+    {
+        margin-left: 10px;
+        font-size: 21px;
+    }
+    .intro h1
+    {
+        margin-left: 10px;
+        font-size: 23px;
+    }
+    .intro a img
+    {
+        width: 40px;
+        height: 40px;
+    }
+    #mainImg
+    {
+        width: 200px;
+        height: 200px;
+    }
+   
+    
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+           <div class="logo">
+             <h2>Port<span>folio</span></h2>
+           </div>   
+            <div class="icons">
+                <a href="#" id="home" class="active">Home</a>
+                <a href="#abouts" id="about">About</a>
+                <a href="#projects" id="project">Project</a>
+                <a href="#contacts" id="contact">Contact</a>
+
+                <i class="fa-solid fa-xmark" id="crose"></i>
+            </div>
+                <i class="fa-solid fa-bars" id="menu"></i>  
+               
+        </nav>
+         <!----main section-->
+
+        <div class="main">
+            <div class="intro">
+                <h3>Hii</h3> 
+                <h2>i'm <span>Suheb khan</span></h2></br>
+                <h1>a web developer</h1></br>
+                <a href=""> <img src="images/icon1.png" alt=""id="img" ></a>
+                <a href=""><img src="images/icon2.png" alt="" id="img"></a>
+                <a href=""><img src="images/icon3.png" alt="" id="img"></a>
+                <a href=""><img src="images/icon4.png" alt="" id="img"></a>
+
+
+            </div>
+           
+                <img src="images/suheb.jpg" alt="" id="mainImg" width="500px" height="500px">
+            
+        </div>
+
+        <!----About section-->
+
+        <div class="about" id="abouts">
+                       
+            <img src="images/suheb.jpg" alt="">
+            <div class="aboutme">
+                <h2>About me</h2></br>
+                 My name is Suheb khan i am from UP (bulandshahr).</br>
+                 i have completed gruduation from IP(PG) college campus 2 bulandshahr.</br>
+                 and i have done my full stack web development from DICS institute GTB nagar delhi.
+
+                 <div class="aboutIcon">
+                    <p class="link active-link" id="skill">Skills </p>
+                    <p class="link" id="education">Education</p>
+                 </div></br>
+
+               <div class="aboutContent active-content" >
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>(Basic) NODE JS</li>
+                    <li>(Basic) MONGO DB</li>
+               </div>
+              
+                <div class="aboutContent" id="aboutContent2">
+                    <li>Full stack development, from</br><span>DICS institute GTB Nagar delhi.</span></li>
+                    <li>(BCA) Bachelor of computer application, from</br><span>IP (PG) college campus 2 bulandshahr (UP).</span></li>
+                    <li>Intermediate, from</br><span>MIC pahasu bulandshahr (UP).</span></li>
+               </div>
+
+
+            </div>
+
+            
+           
+        </div>
+     <!-------Project section--->
+    
+
+        <div class="project-section" id="projects">
+            
+            <div class="heading">
+                <h1>My Project</h1>
+            </div>
+            <div class="projectList">
+                <div class="project">
+                    <img src="images/shop.png" alt="">
+                    <div class="text">
+                        <h2>Ecommerce Site</h2>
+                        <p>This is a simple Ecommerce website using html, css, javascript. Use  php and sql database in login page.  </p>
+                        <a href="http://localhost:81/Shopping-site/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/chat.png" alt="">
+                    <div class="text">
+                        <h2>A realtime chat website </h2>
+                        <p>Simple real time chat application using html, css, javascript and Nodejs  use in backend.</p>
+                        <a href="http://localhost:81/Chat-Application/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="images/game.png" alt="">
+                    <div class="text">
+                        <h2>Rock paper scissors game</h2>
+                        <p> This is a simple game and this game build using html,css and javascript only.</p>
+                        <a href="http://localhost:81/Game/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+
+            </div>
+      
+        </div>
+
+
+        <!-----Contact  section -->
+
+        <div class="contact-section" id="contacts">
+            <div class="contactme">
+                <div class="left">
+                    
+                    <h1>Contact me</h1>
+                    <p><span>Phone :  </span>7668826843</p></br>
+                    <p><span>Email : </span>suheb1699@gmail.com</p></br></br>
+                    <div class="resume">
+                        <a href="images/Suheb khan.pdf" download >Download Resume</a>
+                    </div>
+                    
+                   
+                    
+                    <div class="socialicons">
+                        <a href="https://linkedin.com/in/suhebkhan12">  <img src="images/linkedin.webp" alt="" ></a>
+                        <a href="https://www.facebook.com/profile.php?id=100041919274819">  <img src="images/facebook.png" alt="" ></a>
+                        <a href="https://github.com/Suhebkhan12">  <img src="images/github.png" alt=""></a> 
+                       
+                    </div>
+
+                </div>
+                <div class="right">
+                    <form action="/submit" method="post" >
+                        <input type="text" name="name" class="name" placeholder="Enter name" ></br>
+                        <input type="email" name="email" class="email" placeholder="Enter email"></br>
+                        <input type="phone" name="phone" class="phone" placeholder="Enter phone"></br>
+                        <button type="submit" id="btnsubmit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-----Footer-->
+        <div class="footer">
+            <h2>&copy; Suheb khan @ Portfolio.com</h2>
+        </div>
+
+         
+        
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
